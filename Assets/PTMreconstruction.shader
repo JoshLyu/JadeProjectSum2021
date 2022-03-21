@@ -46,7 +46,8 @@
 
 
 
-            fixed4 fragmentFunc(v2f IN) :SV_Target{
+            fixed4 fragmentFunc(v2f IN) :SV_Target
+            {
                 const int BASIS_COUNT = 6;
                 fixed4 pixelColor = fixed4(0,0,0,1);
                 float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
@@ -54,12 +55,14 @@
                 float v = lightDirection.y;
                 float w = lightDirection.z;
                 float row[BASIS_COUNT];
+
                 row[0] = 1.0f;
                 row[1] = u;
                 row[2] = v;
                 row[3] = w;
                 row[4] = u * u;
                 row[5] = u * v;
+
                 half4 color0 = 2*tex2D(_Weight0, IN.uv)-1;
                 pixelColor = pixelColor + color0 * row[0];
 
@@ -80,7 +83,7 @@
                 
 
 
-                return  fixed4(pixelColor.xyz,1) * _LightColor0;;
+                return fixed4(pixelColor.xyz, 1) * _LightColor0;
             }
 
             ENDCG

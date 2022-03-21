@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: JadePTM
   m_Shader: {fileID: 4800000, guid: 9bbc40edc54920746a45122bf2e513e2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -56,75 +56,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight0:
-        m_Texture: {fileID: 2800000, guid: 115fa868031120c4fb03ae00ff0dd6fe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 09c010ae73c2992418d04ee3307636af, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight1:
-        m_Texture: {fileID: 2800000, guid: 60b9ef9c40a246a4b998a9236b0471ec, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight10:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight11:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight12:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight13:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight14:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight15:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight16:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight17:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e1882b5dc59d14a4bacee04b807336bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight2:
-        m_Texture: {fileID: 2800000, guid: 6e9bc8bfae1dacf4eb6a94a577072f3b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1302cf91d7e7d5d44afe8c580c61f4c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight3:
-        m_Texture: {fileID: 2800000, guid: 6ad121b3d45a7c74d9bac48119a3c3c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 00a026f6d1834764580bbba73e761dec, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight4:
-        m_Texture: {fileID: 2800000, guid: 17f275e1b4038b9499a79832cc433bec, type: 3}
+        m_Texture: {fileID: 2800000, guid: ace49a05140b525409dc1e5e33f055e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Weight5:
-        m_Texture: {fileID: 2800000, guid: 8674dc7956ab9dd459a773149f6a5bca, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight6:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight7:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight8:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Weight9:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e5ba9ecdb88f5444093614389fce7d2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
