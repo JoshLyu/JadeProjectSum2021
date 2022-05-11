@@ -42,15 +42,12 @@
             sampler2D  _Weight3;
             sampler2D  _Weight4;
             sampler2D  _Weight5;
-            
-
-
 
             fixed4 fragmentFunc(v2f IN) :SV_Target
             {
                 const int BASIS_COUNT = 6;
                 fixed4 pixelColor = fixed4(0,0,0,1);
-                float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
+                float3 lightDirection = mul(unity_WorldToObject, float4(normalize(_WorldSpaceLightPos0.xyz), 0)).xyz;
                 float u = lightDirection.x;
                 float v = lightDirection.y;
                 float w = lightDirection.z;
