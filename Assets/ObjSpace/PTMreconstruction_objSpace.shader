@@ -66,7 +66,7 @@
             {
                 fixed4 pixelColor = fixed4(0, 0, 0, 1);
 
-                float u = lightDirection.x;
+                float u = -lightDirection.x; // Unity flips x-direction for some reason
                 float v = lightDirection.y;
                 float w = lightDirection.z;
                 float row[BASIS_COUNT];
@@ -113,9 +113,8 @@
 
                 float3 normalPTM = normalize(float3(color[1].g, color[2].g, color[3].g));
 
-                return fixed4(IN.normal * 0.5 + 0.5, 1);//fixed4(dot(lightDir0, normalize(IN.normal)), dot(lightDir0, normalize(IN.normal)), dot(lightDir0, normalize(IN.normal)), 1);
-                    //fixed4(ptm * _LightColor0.rgb /* * smoothstep(0.25, 0.5, dot(lightDir0, normalize(IN.normal)))*/, 1);
-                    //+ fixed4(evaluatePTM(color, lightDir1.xyz), 1) * _LightColor1 * smoothstep(0, 0.25, lightDir1.z);
+                return //fixed4(IN.normal * float3(-1,1,1) * 0.5 + 0.5, 1);//fixed4(dot(lightDir0, normalize(IN.normal)), dot(lightDir0, normalize(IN.normal)), dot(lightDir0, normalize(IN.normal)), 1);
+                    fixed4(ptm * _LightColor0.rgb  * smoothstep(0.0, 0.25, dot(lightDir0, normalize(IN.normal))), 1);
             }
 
             ENDCG
